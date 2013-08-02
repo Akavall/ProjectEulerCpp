@@ -35,11 +35,10 @@ public:
 
   void buildMap(int n)
   {
-    for(int i = 0; i<n; i++)
+    for(int i = 1; i<n; i++)
       { 
-	cout << "i " << i << collatz(i) << endl;
-
-	myMap[i] = collatz(i);
+        int col = collatz(i);
+	myMap[i] = col;
       }
   } 
 
@@ -80,13 +79,10 @@ public:
 
 int main()
 {
-  ProjectEuler14 PE = ProjectEuler14(20);
+  ProjectEuler14 PE = ProjectEuler14(1000000);
   
-  // long test = PE.getAnswer();
-
-  PE.buildPrintMap(10);
-
-  // cout << test << endl;
+  long answer = PE.getAnswer();
+  cout << answer << endl;
 
   return 0;
 }
