@@ -9,8 +9,6 @@ int main()
 {
   cout <<"I am in project euler 112"<<endl;
 
-  double test = 0.0;
-
   int project_euler_112 = getAnswer(0.99);
 
   cout <<"answer : " << project_euler_112 << endl;
