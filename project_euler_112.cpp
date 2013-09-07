@@ -3,7 +3,7 @@
 using namespace::std;
 
 bool isBouncy(int x);
-double getAnswer(double cutoff);
+int getAnswer(double cutoff);
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
 
   double test = 0.0;
 
-  int project_euler_112 = (int) getAnswer(0.99);
+  int project_euler_112 = getAnswer(0.99);
 
   cout <<"answer : " << project_euler_112 << endl;
 
@@ -47,7 +47,7 @@ bool isBouncy(int x)
   return false;
 }
 
-double getAnswer(double cutoff)
+int getAnswer(double cutoff)
 {
   double bouncy_count=0, ratio=0;
   int counter=0;
