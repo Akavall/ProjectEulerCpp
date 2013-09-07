@@ -11,9 +11,9 @@ int main()
 
   double test = 0.0;
 
-  test = getAnswer(0.99);
+  int project_euler_112 = (int) getAnswer(0.99);
 
-  cout <<"answer : " << (int)test << endl;
+  cout <<"answer : " << project_euler_112 << endl;
 
   return 0;
 }
